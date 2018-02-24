@@ -1,0 +1,21 @@
+我在写Scrapy遇到的一些坑
+
+post一个json数据时，应该使用（如果使用formdata会被默认用&连接）
+yield scrapy.FormRequest(
+    url=url,
+    body=json.dumps(self.form),
+    headers=self.headers,
+    callback=self.parse_page
+)
+或者
+yield scrapy.Request(url=url, callback=self.parse_category, method="POST", headers=self.headers,
+                             body=json.dumps(self.category_form))
+为什么header会多一些莫名其妙的字段？
+
+json.loads而不是json.load
+
+数组添加用append
+
+如何制定特定的item用特定的pipeline
+
+
