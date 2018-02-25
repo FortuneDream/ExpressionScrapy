@@ -16,6 +16,6 @@ json.loads而不是json.load
 
 数组添加用append
 
-如何制定特定的item用特定的pipeline
+如何制定特定的item用特定的pipeline(spider.name以及item的类型来区分)
 
 

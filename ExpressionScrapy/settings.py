@@ -68,7 +68,6 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     'ExpressionScrapy.pipelines.DuplicatePipeline': 200,
     'ExpressionScrapy.pipelines.MongoPipeline': 300,
-    'ExpressionScrapy.pipelines.DownloadPipeline': 400
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
